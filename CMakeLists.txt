@@ -22,4 +22,6 @@ add_test(NAME AllocatorTest COMMAND AllocatorTest)
 
 add_executable(allocator main.cpp
         Allocator.cpp
-        Allocator.h)
+        Allocator.h
+        ArenaAllocator.cpp
+        ArenaAllocator.h)

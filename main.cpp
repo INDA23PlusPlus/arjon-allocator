@@ -3,6 +3,7 @@
 #include <iostream>
 #include <sys/mman.h>
 #include "Allocator.h"
+#include "ArenaAllocator.h"
 
 int main() {
 

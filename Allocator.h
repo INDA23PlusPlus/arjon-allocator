@@ -17,6 +17,9 @@
 #include <map>
 #include <unordered_map>
 
+
+// En simpel allokerare som allokerar pages med mmap och sedan allokerar minne från dessa pages.
+// Den använder sig av en free list (implementerat genom en std::map) för att hålla reda på ledigt minne.
 class Allocator {
 public:
     auto allocate(std::size_t size, std::size_t alignment) -> void*;
